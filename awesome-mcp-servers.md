@@ -1,5 +1,5 @@
 # Share Best MCP Servers
-世界上最好的MCP Servers的列表  
+
 精选的高质量MCP（Model Context Protocol）服务器列表，系统评分 >= 85。
  这些服务器可以被大语言模型直接调用，提供各种强大的功能扩展。
 
@@ -7,23 +7,6 @@
 
 ## 高质量MCP中文搜索引擎 
 访问网址：[ShareMCP.cn](https://sharemcp.cn)
-
-### 全网扫描发现+分析
-```shell
-#!/bin/bash
-
-# 爬取MCP服务器，记录在mcp_basic_repos.jsonl中
-python mcp_crawler_step_1.py
-
-# 爬取mcp_basic_repos.jsonl中的MCP服务器，获取README内容，记录在mcp_repos_readme.jsonl中（如时间过长可以手动中止）
-python mcp_crawler_step_2.py
-
-# 分析mcp_repos_readme.jsonl中的MCP服务器，记录在results/mcp_repos_analysis.jsonl中
-python mcp_analyzer_step_3.py
-
-# 过滤score > 85，生成列表
-python mcp_server_filter.py
-```
 
 ## 目录
 
